@@ -6,6 +6,9 @@ void *ft_memset(void *x, int y, size_t z)
     unsigned char k;
     size_t i;
 
+    if (!x)
+        return (NULL);
+
     c = (unsigned char *)x;
     k = (unsigned char)y;
     i = 0;
