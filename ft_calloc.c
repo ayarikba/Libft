@@ -10,6 +10,8 @@ void *calloc(size_t memb, size_t size)
         return (NULL);
     
     ptr = malloc(i * sizeof(char));
+    if (!ptr)
+        return (NULL);
     ft_memset(ptr, 0, ((size_t) i));
     return (ptr);
 }
