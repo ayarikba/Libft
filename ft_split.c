@@ -7,7 +7,6 @@ static int find_array_size(char const *s, char *c)
     int i;
     int j;
     int trig;
-    char *x;
 
     i = 0;
     j = 0;
@@ -82,16 +81,4 @@ char **ft_split(char const *s, char c)
         return (NULL);
     allocate_str(s1, split, ch);
     return split;
-}
-
-int main()
-{
-    char **s = ft_split("ahmet   faruk   yarikbas    ", ' ');
-    int i = 0;
-
-    while (s[i])
-    {
-        printf("%d = %s/\n",i, s[i]);
-        i++;
-    }
 }

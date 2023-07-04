@@ -12,7 +12,7 @@ void ft_lstclear(t_list **lst, void (*del)(void *))
     while (iter != NULL)
     {
         iter = iter->next;
-       ft_lstdelone(new, del);
+        ft_lstdelone(new, del);
         new = iter;
     }
 }

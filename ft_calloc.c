@@ -1,17 +1,22 @@
 #include "libft.h"
 
-void *calloc(size_t memb, size_t size)
+void *ft_calloc(size_t memb, size_t size)
 {
-    long i;
+   size_t total_size = memb * size;
     void *ptr;
 
-    i = (long)(memb * size);
-    if (i > 2147483647 || i == 0)
-        return (NULL);
-    
-    ptr = malloc(i * sizeof(char));
+    if (total_size == 0)
+        return 0;
+
+    ptr = malloc(total_size);
     if (!ptr)
-        return (NULL);
-    ft_memset(ptr, 0, ((size_t) i));
-    return (ptr);
+        return 0;
+
+    unsigned char *byte_ptr = ptr;
+    for (size_t i = 0; i < total_size; i++)
+    {
+        byte_ptr[i] = 0;
+    }
+
+    return ptr;
 }

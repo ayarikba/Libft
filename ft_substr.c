@@ -4,7 +4,7 @@ char *ft_substr(char const *ptr, unsigned int s, size_t n)
 {
     if (!ptr || !ptr[0] || !n)
         return NULL;
-    int i;
+    size_t i;
     char *dup;
 
     i = 0;

@@ -13,10 +13,3 @@ char *ft_strchr(const char *s, int c)
         i++;
     return ((char*)(s + i));
 }
-
-
-int main()
-{
-    char x[] = "ahmet";
-    printf("%s",ft_strchr(x,'m'));
-}

@@ -1,8 +1,4 @@
 #include "libft.h"
-
-
-
-
 char *ft_strnstr(const char *big, const char *little, size_t n)
 {
     if (!little || !little[0])
@@ -24,11 +20,4 @@ char *ft_strnstr(const char *big, const char *little, size_t n)
         i++;
     }
     return (NULL);
-}
-
-
-int main()
-{
-    char x[] = "anfasnjfasnjfamaladsafsagasgaw";
-    printf("%s",ft_strnstr(x, "mal", 20));
 }
