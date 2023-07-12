@@ -2,7 +2,7 @@
 
 size_t ft_strlcat(char  *dst, const char    *src, size_t    n)
 {
-    if (!dst || !src || !n)
+    if (!dst || !src )
         return (0);
     
     size_t i;
