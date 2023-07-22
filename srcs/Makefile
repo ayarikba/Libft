@@ -45,7 +45,7 @@ SRCSB =	ft_lstnew.c			\
 
 NAME = libft.a
 
-OBJS_DIR = objs/
+OBJS_DIR = ../objs/
 OBJS = $(SRCS:.c=.o)
 OBJECTS_PREFIXED = $(addprefix $(OBJS_DIR), $(OBJS))
 
