@@ -15,4 +15,5 @@ void ft_lstclear(t_list **lst, void (*del)(void *))
         ft_lstdelone(new, del);
         new = iter;
     }
+    *lst = NULL;
 }

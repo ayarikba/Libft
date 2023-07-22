@@ -54,7 +54,6 @@ void allocate_str(char *s1, char **split, char *ch)
         while (s1[j] && s1[j] != ch[0])
             j++;
         split[k] = (char *)malloc(sizeof(char) * (j - i + 1));
-       // printf("i = %d  j = %d\n",i, j);
         split[k] = ft_substr(s1, i, (j - i));
         k++;
         i = j;
@@ -67,7 +66,11 @@ void allocate_str(char *s1, char **split, char *ch)
 char **ft_split(char const *s, char c)
 {
     if (!s || !s[0])
-        return (NULL);
+    {   
+        char **x =  malloc(sizeof(char *) * 1);
+        x[0] = 0;   
+        return (x);
+    }
     char *ch;
     int size;
     char *s1;

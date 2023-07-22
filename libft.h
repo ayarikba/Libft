@@ -2,9 +2,6 @@
 #define LIBFT_H
 
 #include <unistd.h>
-#include <stdio.h>
-#include <ctype.h>
-#include <string.h>
 #include <stdlib.h>
 
 typedef struct s_list
